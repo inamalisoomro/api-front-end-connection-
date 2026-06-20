@@ -3,29 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Todo App</title>
+  <title>Modern Todo App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Todo App</h1>
+  <div class="app-container">
+    <h1>My Tasks</h1>
 
-  <form id="form">
-    <input
-      type="text"
-      id="input"
-      placeholder="Enter todo title"
-    />
+    <form id="form" class="todo-form">
+      <input type="text" id="input" placeholder="What needs to be done?" autocomplete="off" />
+      <button type="submit">Add Task</button>
+    </form>
 
-    <button type="submit">
-      Add Todo
-    </button>
-  </form>
-
-  <hr />
-
-  <div id="todoList"></div>
+    <div id="todoList" class="todo-list"></div>
+  </div>
 
   <script src="./app.js"></script>
-
 </body>
 </html>
